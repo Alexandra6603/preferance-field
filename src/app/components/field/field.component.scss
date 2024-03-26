@@ -1,0 +1,207 @@
+.field {
+
+  margin: auto;
+  width: 60rem;
+  height: 54rem;
+  border: 3px solid black;
+
+  .horizontal {
+    display: flex;
+    flex-direction: column;
+    
+    .player1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .player3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: rotate(180deg);
+    }
+
+    &__mountain {
+      height: 12rem;
+      width: 26.8rem;
+      background-color: black;
+      clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 50% 100%);
+      display: flex; 
+      align-items: center; 
+      justify-content: center;
+
+      .border {
+        width: 26.7rem;
+        height: 11.9rem;
+        background-color: palegreen;
+        clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 50% 100%);
+      }
+    }
+
+    &__bullet {
+      background-color: black;
+      width: 33.4rem;
+      height: 3rem;
+      clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+
+      .border {
+        width: 33.3rem;
+        height: 2.9rem;
+        background-color: red;
+        clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+      }
+    }
+
+    &__whists {
+      display: flex;
+
+      &-w1 {
+        width: 20rem;
+        height: 12rem;
+        background-color: black;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 150%, 0% 0%);
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+    
+        .border {
+          width: 19.9rem;
+          height: 11.9rem;
+          background-color: yellow;
+          clip-path: polygon(0% 0%, 100% 0%, 100% 150%, 0% 0%);
+        }
+      }
+    
+      &-w2 {
+        width: 20rem;
+        height: 11.9rem;
+        border-bottom: 0.1rem solid black;
+      }
+  
+      &-w3 {
+        width: 20rem;
+        height: 12rem;
+        background-color: black;
+        clip-path: polygon(0% 0%, 100% 0%, 0% 150%, 0% 0%);
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+    
+        .border {
+          width: 19.9rem;
+          height: 11.9rem;
+          background-color: aqua;
+          clip-path: polygon(0% 0%, 100% 0%, 0% 150%, 0% 0%);
+        }
+      }
+    }
+  }
+
+  .vertical {
+    display: flex;
+    align-items: center;
+    margin-top: -54rem;
+
+    .player4 {
+      display: flex;
+      align-items: center;
+    }
+
+    .player2 {
+      display: flex;
+      align-items: center;
+      transform: rotate(180deg);
+    }
+
+    &__mountain {
+      height: 24rem;
+      width: 13.3rem;
+      background-color: black;
+      clip-path: polygon(0% 0%, 100% 50%, 100% 50%, 0% 100%);
+      display: flex; 
+      align-items: center; 
+      justify-content: center;
+
+      .border {
+        width: 13.2rem;
+        height: 23.9rem;
+        background-color: navajowhite;
+        clip-path: polygon(0% 0%, 100% 50%, 100% 50%, 0% 100%);
+      }
+    }
+
+    &__bullet {
+      background-color: black;
+      width: 3.4rem;
+      height: 30rem;
+      clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+
+      .border {
+        width: 3.3rem;
+        height: 29.9rem;
+        background-color: violet;
+        clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
+      }
+    }
+
+    
+
+    &__whists {
+      display: flex;
+      flex-direction: column;
+
+      &-w1 {
+        width: 13.3rem;
+        height: 18rem;
+        background-color: black;
+        clip-path: polygon(0% 0%, 0% 100%, 150% 100%, 0% 0%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        .border {
+          width: 13.2rem;
+          height: 17.9rem;
+          background-color: red;
+          clip-path: polygon(0% 0%, 0% 100%, 150% 100%, 0% 0%);
+        }
+  
+        .text {
+          margin-top: 8rem;
+        }
+      }
+
+      &-w2 {
+        width: 13.2rem;
+        height: 18rem;
+        border-right: 0.1rem solid black;
+      }
+  
+      &-w3 {
+        width: 13.3rem;
+        height: 18rem;
+        background-color: black;
+        clip-path: polygon(0% 100%, 0% 0%, 0% 0%, 150% 0%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        .border {
+          width: 13.2rem;
+          height: 17.9rem;
+          background-color: green;
+          clip-path: polygon(0% 100%, 0% 0%, 0% 0%, 150% 0%);
+        }
+      }
+    }
+
+  }
+}
+
